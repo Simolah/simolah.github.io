@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    #game-instructions {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #card-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px; /* Adjust the width to accommodate longer text */
+      height: 220px;
+      border: 1px solid #000;
+      background-color: #ffffff;
+      border-radius: 10px;
+      font-size: 24px; /* Adjust the font size */
+      margin-bottom: 20px;
+      word-wrap: break-word; /* Allows text to wrap to the next line */
+      padding: 10px;
+    }
+
+    #draw-button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 24px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-instructions">
+    <p>Click the "Draw a Card!" button to draw a random card.</p>
+  </div>
+  <div id="card-container">Empty Card</div>
+  <button id="draw-button" onclick="drawCard()">Draw a Card!</button>
+
+  <script>
+    const cards = [
+      'This is a longer card with more text that will wrap to the next line.',
+      'Another longer card with even more text to test the wrapping.',
+      'A third card with plenty of text to demonstrate text wrapping.',
+      // Add more cards with longer text as needed
+    ];
+
+    const cardContainer = document.getElementById('card-container');
+
+    function drawCard() {
+      const randomIndex = Math.floor(Math.random() * cards.length);
+      const randomCard = cards.splice(randomIndex, 1)[0];
+
+      cardContainer.textContent = randomCard;
+
+      if (cards.length === 0) {
+        document.getElementById('draw-button').disabled = true;
+      }
+    }
+  </script>
+</body>
+</html>
