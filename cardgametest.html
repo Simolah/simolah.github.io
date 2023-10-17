@@ -21,14 +21,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 250px; /* Adjust the width to accommodate longer text */
+      width: 250px;
       height: 220px;
       border: 1px solid #000;
       background-color: #ffffff;
       border-radius: 10px;
-      font-size: 24px; /* Adjust the font size */
+      font-size: 24px;
       margin-bottom: 20px;
-      word-wrap: break-word; /* Allows text to wrap to the next line */
+      word-wrap: break-word;
       padding: 10px;
     }
 
@@ -51,25 +51,32 @@
   <button id="draw-button" onclick="drawCard()">Draw a Card!</button>
 
   <script>
-    const cards = [
-      'This is a longer card with more text that will wrap to the next line.',
-      'Another longer card with even more text to test the wrapping.',
-      'A third card with plenty of text to demonstrate text wrapping.',
-      // Add more cards with longer text as needed
-    ];
+    let cards = [];
 
-    const cardContainer = document.getElementById('card-container');
+    function loadCardsFromFile() {
+      fetch('cards.txt')
+        .then(response => response.text())
+        .then(data => {
+          cards = data.split('\n').map(card => card.trim());
+        })
+        .catch(error => {
+          console.error('Error loading cards from file:', error);
+        });
+    }
 
     function drawCard() {
+      if (cards.length === 0) {
+        cardContainer.textContent = 'No more cards in the deck';
+        return;
+      }
+
       const randomIndex = Math.floor(Math.random() * cards.length);
       const randomCard = cards.splice(randomIndex, 1)[0];
 
       cardContainer.textContent = randomCard;
-
-      if (cards.length === 0) {
-        document.getElementById('draw-button').disabled = true;
-      }
     }
+
+    loadCardsFromFile(); // Load cards from the file when the page loads
   </script>
 </body>
 </html>
