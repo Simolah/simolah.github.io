@@ -31,6 +31,6 @@ function init() {
         setTimeout(() => {
             const randomCard = drawRandomCard();
             flipCard(randomCard);
-        }, 500);
+        }, 600);
     });
 }
