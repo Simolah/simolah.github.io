@@ -1,44 +1,14 @@
 {
   "cards": [
-    {
-      "text": "Card 1 Text",
-      "category": "A"
-    },
-    {
-      "text": "Card 2 Text",
-      "category": "B"
-    },
-    {
-      "text": "Card 3 Text",
-      "category": "C"
-    },
-    {
-      "text": "Card 4 Text",
-      "category": "A"
-    },
-    {
-      "text": "Card 5 Text",
-      "category": "B"
-    },
-    {
-      "text": "Card 6 Text",
-      "category": "C"
-    },
-    {
-      "text": "Card 7 Text",
-      "category": "A"
-    },
-    {
-      "text": "Card 8 Text",
-      "category": "B"
-    },
-    {
-      "text": "Card 9 Text",
-      "category": "C"
-    },
-    {
-      "text": "Card 10 Text",
-      "category": "A"
-    }
+    "Card 1 Text",
+    "Card 2 Text",
+    "Card 3 Text",
+    "Card 4 Text",
+    "Card 5 Text",
+    "Card 6 Text",
+    "Card 7 Text",
+    "Card 8 Text",
+    "Card 9 Text",
+    "Card 10 Text"
   ]
 }
