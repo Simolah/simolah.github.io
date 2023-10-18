@@ -1,23 +1,26 @@
 const drawButton = document.getElementById("drawButton");
 const cardInner = document.getElementById("cardInner");
 const cardBack = document.getElementById("cardBack");
-const cardData = []; // Array to store card data
+
+let cardText = []; // Array to store custom card text
 
 function drawRandomCard() {
-    const randomIndex = Math.floor(Math.random() * cardData.length);
-    return cardData[randomIndex];
+    const randomIndex = Math.floor(Math.random() * cardText.length);
+    return cardText[randomIndex];
 }
 
-function flipCard(card) {
-    cardBack.textContent = card.text;
+function flipCard() {
+    const randomCard = drawRandomCard();
+    cardBack.textContent = randomCard;
     cardInner.classList.add("card-flip");
 }
 
+// Fetch the JSON data from the external file
 fetch("cards.json")
     .then(response => response.json())
     .then(data => {
-        cardData.push(...data.cards); // Load card data from JSON
-        init();
+        cardText = data.cards; // Assign the custom text to the cardText array
+        init(); // Call the init function once the data is loaded
     })
     .catch(error => console.error("Error loading card data:", error));
 
@@ -25,8 +28,7 @@ function init() {
     drawButton.addEventListener("click", () => {
         cardInner.classList.remove("card-flip");
         setTimeout(() => {
-            const randomCard = drawRandomCard();
-            flipCard(randomCard);
-        }, 500);
+            flipCard();
+        }, 500); // 500ms matches the CSS transition duration
     });
 }
