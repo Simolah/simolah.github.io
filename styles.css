@@ -48,7 +48,7 @@ body {
 }
 
 .card-front {
-    background-color: #000000;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,14 +56,27 @@ body {
     border-radius: 10px;
     transform: rotateY(0deg);
 }
-
 .card-back {
-    background-color: #076b34; /* Change this to your desired back color */
-    transform: rotateY(180deg);
+    /* Add a default background color or styling for the back of the card */
+    background-color: #076b34;
     border: 2px solid #292e2b;
     border-radius: 10px;
     color: #fff;
 }
+
+/* Set custom background images for different categories */
+.category-image.A {
+    background-image: url("category1-image.jpg");
+}
+
+.category-image.B {
+    background-image: url("category2-image.jpg");
+}
+
+.category-image.C {
+    background-image: url("category3-image.jpg");
+}
+
 
 .button-container {
     display: flex;
