@@ -1,14 +1,32 @@
 {
+  "categoryMap": {
+    "A": {
+      "category": "Category 1",
+      "image": "category1-image.jpg"
+    },
+    "B": {
+      "category": "Category 2",
+      "image": "category2-image.jpg"
+    },
+	"C": {
+      "category": "Category 3",
+      "image": "category3-image.jpg"
+    },
+    // Add more category symbols and their associated category and image data
+  },
   "cards": [
-    "Card 1 Text",
-    "Card 2 Text",
-    "Card 3 Text",
-    "Card 4 Text",
-    "Card 5 Text",
-    "Card 6 Text",
-    "Card 7 Text",
-    "Card 8 Text",
-    "Card 9 Text",
-    "Card 10 Text"
+    {
+      "text": "Place holder to have better meaning for now",
+      "symbol": "A"
+    },
+    {
+      "text": "Another test to give you feeling it is true",
+      "symbol": "B"
+    },
+    {
+      "text": "Three to make it true, or is it two?",
+      "symbol": "C"
+    },
+    // Add more card objects with text and symbol properties
   ]
 }
