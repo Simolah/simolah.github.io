@@ -56,27 +56,27 @@ body {
     border-radius: 10px;
     transform: rotateY(0deg);
 }
+
 .card-back {
-    /* Add a default background color or styling for the back of the card */
-    background-color: #076b34;
+    background-color: #076b34; /* Default background color for the back of the card */
+    transform: rotateY(180deg);
     border: 2px solid #292e2b;
     border-radius: 10px;
     color: #fff;
 }
 
-/* Set custom background images for different categories */
-.category-image.A {
-    background-image: url("category1-image.jpg");
+/* Set custom background colors for different categories */
+.card-back.category-A {
+    background-color: red;
 }
 
-.category-image.B {
-    background-image: url("category2-image.jpg");
+.card-back.category-B {
+    background-color: green;
 }
 
-.category-image.C {
-    background-image: url("category3-image.jpg");
+.card-back.category-C {
+    background-color: blue;
 }
-
 
 .button-container {
     display: flex;
