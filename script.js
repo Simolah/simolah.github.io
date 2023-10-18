@@ -10,6 +10,10 @@ function drawRandomCard() {
 
 function flipCard(card) {
     cardBack.textContent = card.text;
+    // Remove any existing category classes
+    cardBack.classList.remove("category-A", "category-B", "category-C");
+    // Add the category class based on the card's category
+    cardBack.classList.add("category-" + card.category);
     cardInner.classList.add("card-flip");
 }
 
