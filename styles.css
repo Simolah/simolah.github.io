@@ -5,7 +5,7 @@ body, h1, p {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Century Gothic", Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
 }
@@ -21,11 +21,17 @@ body {
     margin: 0 auto;
 }
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+}
+
 .card {
-    width: 150px;
-    height: 220px;
+    width: 300px;
+    height: 440px;
     perspective: 1000px;
-    margin: 20px auto;
 }
 
 .card-inner {
@@ -33,6 +39,8 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-flip {
@@ -52,17 +60,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ddd;
     border-radius: 10px;
     transform: rotateY(0deg);
+	background-image: url('cardfront-image.jpg');
+    background-size: cover;;
 }
 
 .card-back {
-    background-color: #076b34; /* Change this to your desired back color */
+    background-color: #076b34; /* Default background color for the back of the card */
     transform: rotateY(180deg);
-    border: 2px solid #292e2b;
+    border: 1px solid #ddd;
     border-radius: 10px;
     color: #fff;
+
+}
+
+/* Set custom background images for different categories */
+.card-back.category-A {
+    background-image: url('category-a-image.jpg');
+    background-size: cover;
+}
+
+.card-back.category-B {
+    background-image: url('category-b-image.jpg');
+    background-size: cover;
+}
+
+.card-back.category-C {
+    background-image: url('category-c-image.jpg');
+    background-size: cover;
 }
 
 .button-container {
@@ -83,4 +109,18 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.sidebar{
+  position: absolute;
+  width: 400px;
+  background: none;
+  margin-top: 20px;
+  left: 20px;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 14px;
+line-height: 1.2;
+  text-align: left;
+	color: #757575;
 }

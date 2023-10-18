@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Game</title>
+    <title>Assessment Card Game</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="banner-image.jpg" alt="Banner Image">
-    </div>
-    <div class="card" id="card">
-        <div class="card-inner" id="cardInner">
-            <div class="card-front" id="cardFront">
-                <!-- Content for the front of the card -->
-            </div>
-            <div class="card-back" id="cardBack">
-                <!-- Content for the back of the card (loaded from JSON) -->
+    <div class="container">
+        <div class="banner">
+            <img src="banner-image.jpg" alt="Banner Image">
+        </div>
+	<div class="sidebar"> 
+		<h1> Menu </h1>
+		<br><br>
+		<p>Fairness in Assessment</p>
+		<p>The Game</p>
+		<p><a href="#">Instructions</a></p>
+		<p>References</p>
+		<br><br>
+		<p>Background legend<p>
+	
+	</div>
+        <div class="card-container">
+            <div class="card" id="card">
+                <div class="card-inner" id="cardInner">
+                    <div class="card-front" id="cardFront">
+                    </div>
+                    <div class="card-back" id="cardBack">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="button-container">
-        <button id="drawButton">Draw a Card</button>
+        <div class="button-container">
+            <button id="drawButton">Draw a Card!</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+<link rel="icon" type="image/jpg" href="favicon.jpg">
 </html>
+
