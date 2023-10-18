@@ -5,7 +5,7 @@ body, h1, p {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Century Gothic", Arial,  sans-serif;
     text-align: center;
     background-color: #f0f0f0;
 }
@@ -65,17 +65,20 @@ body {
     color: #fff;
 }
 
-/* Set custom background colors for different categories */
+/* Set custom background images for different categories */
 .card-back.category-A {
-    background-color: red;
+    background-image: url('category-a-image.jpg');
+    background-size: cover;
 }
 
 .card-back.category-B {
-    background-color: green;
+    background-image: url('category-b-image.jpg');
+    background-size: cover;
 }
 
 .card-back.category-C {
-    background-color: blue;
+    background-image: url('category-c-image.jpg');
+    background-size: cover;
 }
 
 .button-container {
