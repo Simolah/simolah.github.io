@@ -7,24 +7,27 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="banner-image.jpg" alt="Banner Image">
-    </div>
-    <div class="card" id="card">
-        <div class="card-inner" id="cardInner">
-            <div class="card-front" id="cardFront">
-				<img src="cardfront-image.jpg" alt="Card Image">
-			</div>
-            </div>
-            <div class="card-back" id="cardBack">
-                <!-- Content for the back of the card (loaded from JSON) -->
+    <div class="container">
+        <div class="banner">
+            <img src="banner-image.jpg" alt="Banner Image">
+        </div>
+        <div class="card-container">
+            <div class="card" id="card">
+                <div class="card-inner" id="cardInner">
+                    <div class="card-front" id="cardFront">
+                        <img src="cardfront-image.jpg" alt="Card Image">
+                    </div>
+                    <div class="card-back" id="cardBack">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="button-container">
-        <button id="drawButton">Draw a Card!</button>
+        <div class="button-container">
+            <button id="drawButton">Draw a Card!</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
 <link rel="icon" type="image/jpg" href="favicon.jpg">
 </html>
+
