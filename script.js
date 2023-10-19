@@ -40,7 +40,7 @@ const sidebarLinks = document.querySelectorAll('.sidebar p');
 
 // Function to flip and show a card
 function flipAndShowCard(card) {
-    cardBack.textContent = card.text;
+    cardBack.innerHTML = card.text;
     cardBack.classList.remove("category-D");
     cardBack.classList.add("category-" + card.category);
     cardInner.classList.add("card-flip");
