@@ -60,7 +60,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ddd;
     border-radius: 10px;
     transform: rotateY(0deg);
 	background-image: url('cardfront-image.jpg');
@@ -91,6 +90,10 @@ body {
     background-image: url('category-c-image.jpg');
     background-size: cover;
 }
+.card-back.category-C {
+    background-image: url('category-d-image.jpg');
+    background-size: cover;
+}
 
 .button-container {
     display: flex;
@@ -99,15 +102,49 @@ body {
 }
 
 button {
+	display: block;
     background-color: #007BFF;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+	padding: 10px;
+	font-weight: normal;
+	font-size: 14px;
+	border-radius: 10px;
+
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+.sidebar{
+  position: absolute;
+  width: 300px;
+  background: none;
+  margin-top: 20px;
+  left: 20px;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 14px;
+line-height: 1.2;
+  text-align: left;
+	color: #757575;
+}
+
+/* Add a media query to adjust the layout when the screen width is smaller */
+@media (max-width: 800px) {
+    .sidebar {
+        position: static; /* Remove absolute positioning */
+        width: 100%; /* Make the sidebar full-width */
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        color: #757575;
+		margin: 0;
+		margin-top: 20px;
+        padding: 0;
+
+    }
 }

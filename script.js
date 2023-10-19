@@ -34,3 +34,20 @@ function init() {
         }, 600);
     });
 }
+
+// Add a click event listener to each sidebar link
+document.querySelectorAll('.sidebar p').forEach(link => {
+    link.addEventListener('click', (event) => {
+        // Prevent default link behavior (e.g., following href)
+        event.preventDefault();
+
+        // Get the data-card-id attribute from the clicked link
+        const cardId = event.target.getAttribute('data-card-id');
+
+        // Find the card data by ID
+        const card = cardData.find(c => c.id === cardId);
+
+        // Display the card
+        flipCard(card);
+    });
+});
