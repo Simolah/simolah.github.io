@@ -55,3 +55,17 @@ sidebarLinks.forEach(link => {
     });
 });
 
+function resetCard() {
+    cardInner.classList.remove("card-flip");
+    setTimeout(() => {
+    cardBack.classList.remove("category-A", "category-B", "category-C", "category-D"); // Add more categories as needed
+	}, 600);
+}
+const homeLink = document.getElementById("homeLink");
+
+homeLink.addEventListener("click", () => {
+    resetCard();
+});
+
+
+
