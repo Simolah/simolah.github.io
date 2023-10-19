@@ -46,12 +46,12 @@ function flipAndShowCard(card) {
 }
 
 sidebarLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent the default link behavior
-        const cardData = JSON.parse(link.parentElement.getAttribute('data-card'));
-        cardInner.classList.remove("card-flip");
+    link.addEventListener('click', () => {
+        const cardData = JSON.parse(link.getAttribute('data-card'));
+		cardInner.classList.remove("card-flip");
         setTimeout(() => {
             flipAndShowCard(cardData);
         }, 600);
     });
 });
+
