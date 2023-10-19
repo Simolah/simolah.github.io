@@ -27,6 +27,7 @@ fetch("cards.json")
 
 function init() {
     drawButton.addEventListener("click", () => {
+		resetCard();
         cardInner.classList.remove("card-flip");
         setTimeout(() => {
             const randomCard = drawRandomCard();

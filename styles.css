@@ -67,7 +67,7 @@ body {
 }
 
 .card-back {
-    background-color: #076b34; /* Default background color for the back of the card */
+    background-color: #3d3d3d; /* Default background color for the back of the card */
     transform: rotateY(180deg);
     border: 1px solid #ddd;
     border-radius: 10px;
