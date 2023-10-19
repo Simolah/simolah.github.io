@@ -40,25 +40,5 @@
       "text": "Card 10 Text",
       "category": "A"
     }
-	{
-		"id": "1",
-		"text": "Fairness in Assessment",
-		"category": "D"
-	}
-		{
-		"id": "2",
-		"text": " ",
-		"category": "D"
-	}
-		{
-		"id": "3",
-		"text": "Instructions",
-		"category": "D"
-	}
-		{
-		"id": "4",
-		"text": "References",
-		"category": "D"
-	}	
   ]
 }
