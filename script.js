@@ -35,19 +35,23 @@ function init() {
     });
 }
 
-// Add a click event listener to each sidebar link
-document.querySelectorAll('.sidebar p').forEach(link => {
+const sidebarLinks = document.querySelectorAll('.sidebar p');
+
+// Function to flip and show a card
+function flipAndShowCard(card) {
+    cardBack.textContent = card.text;
+    cardBack.classList.remove("category-D");
+    cardBack.classList.add("category-" + card.category);
+    cardInner.classList.add("card-flip");
+}
+
+sidebarLinks.forEach(link => {
     link.addEventListener('click', (event) => {
-        // Prevent default link behavior (e.g., following href)
-        event.preventDefault();
-
-        // Get the data-card-id attribute from the clicked link
-        const cardId = event.target.getAttribute('data-card-id');
-
-        // Find the card data by ID
-        const card = cardData.find(c => c.id === cardId);
-
-        // Display the card
-        flipCard(card);
+        event.preventDefault(); // Prevent the default link behavior
+        const cardData = JSON.parse(link.parentElement.getAttribute('data-card'));
+        cardInner.classList.remove("card-flip");
+        setTimeout(() => {
+            flipAndShowCard(cardData);
+        }, 600);
     });
 });
