@@ -1,42 +1,52 @@
 {
   "cards": [
     {
+	  "headline": "Scenario",
       "text": "Card 1 Text",
       "category": "A"
     },
     {
+	  "headline": "Scenario",
       "text": "Card 2 Text",
       "category": "B"
     },
     {
+	  "headline": "Question",
       "text": "Card 3 Text",
       "category": "C"
     },
     {
+	  "headline": "Question",
       "text": "Card 4 Text",
       "category": "A"
     },
     {
+	  "headline": "Opportunity",
       "text": "Card 5 Text",
       "category": "B"
     },
     {
+	  "headline": "Opportunity",
       "text": "Card 6 Text",
       "category": "C"
     },
     {
+	  "headline": "Data",
       "text": "Card 7 Text",
       "category": "A"
     },
     {
+	  "headline": "Data",
       "text": "Card 8 Text",
       "category": "B"
     },
     {
+	  "headline": "Reflect",
       "text": "Card 9 Text",
       "category": "C"
     },
     {
+	  "headline": "Reflect",
       "text": "Card 10 Text",
       "category": "A"
     }
