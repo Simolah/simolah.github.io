@@ -2,9 +2,29 @@ const drawButton = document.getElementById("drawButton");
 const cardInner = document.getElementById("cardInner");
 const cardBack = document.getElementById("cardBack");
 const cardData = []; // Array to store card data
+let previousCardIndex = -1; // Initialize with an invalid index
+let consecutiveDraws = 0; // Counter for consecutive draws
+const maxConsecutiveDraws = 3; // Number of consecutive draws to achieve
+
+// Array to store the indices of the drawn cards in the current set
+let drawnCardIndices = [];
 
 function drawRandomCard() {
-    const randomIndex = Math.floor(Math.random() * cardData.length);
+    let randomIndex;
+
+    do {
+        randomIndex = Math.floor(Math.random() * cardData.length);
+    } while (drawnCardIndices.includes(randomIndex)); // Keep randomizing until a different card is drawn
+
+    if (consecutiveDraws >= maxConsecutiveDraws) {
+        // Reset the tracking if the required consecutive draws are reached
+        consecutiveDraws = 0;
+        drawnCardIndices = [];
+    }
+
+    drawnCardIndices.push(randomIndex); // Add the drawn card index to the array
+    consecutiveDraws++;
+
     return cardData[randomIndex];
 }
 
