@@ -56,13 +56,26 @@ body {
 }
 .card-back h2 {
     font-weight: bold; /* Makes the headline bold */
-    margin-top: 20px; /* Removes the default top margin for <h2> */
+    margin-top: 80px; /* Removes the default top margin for <h2> */
 	font-family: "Century Gothic", Arial, sans-serif;
     text-align: center;
+	margin-bottom: 80px;
 }
 
 .card-back p {
     margin: 10px 0; /* Adds some spacing between paragraphs */
+}
+
+.card-back h3 { /* This is for the side cards*/
+    font-weight: bold; /* Makes the headline bold */
+    margin-top: 5px; /* Removes the default top margin for <h2> */
+	font-family: "Century Gothic", Arial, sans-serif;
+    text-align: center;
+}
+
+.card-back p2 { /* This is for the side cards*/
+    margin: 10px 0; /* Adds some spacing between paragraphs */
+	font-size: 85%;
 }
 
 .card-front {
@@ -76,12 +89,17 @@ body {
     background-size: cover;;
 }
 
+
 .card-back {
     background-color: #3d3d3d; /* Default background color for the back of the card */
     transform: rotateY(180deg);
     border: 1px solid #ddd;
     border-radius: 10px;
     color: #fff;
+	padding: 15px; /*Add 10px padding to create margins to left and right */
+	
+	
+	
 
 }
 
