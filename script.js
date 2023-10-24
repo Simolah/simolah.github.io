@@ -42,9 +42,7 @@ function drawRandomCard() {
 
     do {
         randomIndex = Math.floor(Math.random() * cardData.length);
-    } while (
-	drawnCardIndices.includes(randomIndex)); // Keep randomizing until a different card is drawn
-
+    } while (drawnCardIndices.includes(randomIndex)); // Keep randomizing until a different card is drawn
     if (consecutiveDraws >= maxConsecutiveDraws) {
         // Reset the tracking if the required consecutive draws are reached
         consecutiveDraws = 0;
