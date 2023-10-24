@@ -72,7 +72,7 @@ body {
 
 .card-back h3 { /* This is for the side cards*/
     font-weight: bold; /* Makes the headline bold */
-    margin-top: 5px; /* Removes the default top margin for <h2> */
+    margin-top: 20px; /* Removes the default top margin for <h2> */
 	font-family: "Century Gothic", Arial, sans-serif;
     text-align: center;
 	margin-left: 15px;
