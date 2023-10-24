@@ -38,10 +38,14 @@ let drawnCardIndices = [];
 
 function drawRandomCard() {
     let randomIndex;
+	let validCategories = ["A", "B", "C"];
 
     do {
         randomIndex = Math.floor(Math.random() * cardData.length);
-    } while (drawnCardIndices.includes(randomIndex)); // Keep randomizing until a different card is drawn
+    } while (
+	drawnCardIndices.includes(randomIndex)
+	!validCategories.includes(cardData[randomIndex].category)
+	); // Keep randomizing until a different card is drawn
 
     if (consecutiveDraws >= maxConsecutiveDraws) {
         // Reset the tracking if the required consecutive draws are reached
