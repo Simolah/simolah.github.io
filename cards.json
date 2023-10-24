@@ -42,7 +42,7 @@
     },
     {
 	  "headline": "What method can help you to have a better understanding on your students’ background?",
-      "text": "Student’s scientific background has significant impact on their learning. Diagnostic assessment can help you identify your students’ current knowledge of a subject, their skill sets and capabilities, and to clarify misconceptions before teaching takes place. This can include pre-tests, self-assessment, and interviews.",
+      "text": "Student’s background has significant impact on their learning. Diagnostic assessment can help you identify your students’ current knowledge of a subject, their skill sets and capabilities, and to clarify misconceptions before teaching takes place. This can include pre-tests, self-assessment, and interviews.",
       "category": "C"
     },
     {
@@ -54,6 +54,72 @@
 	  "headline": "What tools can you use to help keep the summative assessment fair and objective?",
       "text": "Rubrics, often developed around a set of standards or expectations, can be used for summative assessment. Rubrics can be given to students before they begin working on a particular project, so they know what is expected of them for each of the criteria. Rubrics also can help you to be more objective when deriving a final, summative grade by following the same criteria students used to complete the project.",
       "category": "A"
-    }
+    },
+	{
+	  "headline": "How can you provide fair assessment criteria in this context?",
+      "text": "You teach a course where class activity is part of the assessment. You have a few very active students who love to share their brilliant ideas. You have a few very extrovert students who like to improvise, although they do not always get it right. You are also aware of the fact that some students are shy and some just unmotivated.",
+      "category": "B"
+    },
+	{
+	  "headline": "What strategies can you use to enhance a fairer approach? ",
+      "text": "You teach a course where class activity is part of the assessment. You have a few very active students who love to share their brilliant ideas. You have a few very extrovert students who like to improvise, although they do not always get it right. You are also aware of the fact that some students are shy and some just unmotivated.",
+      "category": "B"
+    },
+	{
+	  "headline": "How can you make sure your assessment practices are fair in this respect? ",
+      "text": "Your students are expecting to possess the right knowledge for real life working situations. ",
+      "category": "C"
+    },
+	{
+	  "headline": "What kinds of assessment practices can you implement in your teaching? ",
+      "text": "Your students are expecting to possess the right knowledge for real life working situations.",
+      "category": "C"
+    },
+	{
+	  "headline": "How do you proceed? Is there a single ‘fairest thing’ to do?",
+      "text": "You think you have a good idea about your students’ capabilities. You know this is not relevant for your assessment, but after the final assessment task you find that a couple of students are just one point below the limit for a higher grade. You think that at least one of the students really earn the higher grade. ",
+      "category": "C"
+    },
+	{
+	  "headline": "How can you make sure that no student has an advantage in relation to the assessment methods you chose?",
+      "text": "You teach a course for students from different fields of science.",
+      "category": "A"
+    },
+	{
+	  "headline": "What fairness issues might occur from the perspective of the students who took the course in previous years?",
+      "text": "You are re-designing a course and wish to try out new assessment tools as well",
+      "category": "C"
+    },
+	{
+	  "headline": "Does it matter that there are students who took the course in previous years? How can you address it?",
+      "text": "You are re-designing a course and wish to try out new assessment tools as well",
+      "category": "C"
+    },
+	{
+	  "headline": "What ways can you think of to enhance this in this own teaching?",
+      "text": "Fair assessment practices are closely correlated with students’ motivation for learning, students’ engagement in learning, and students’ level of academic achievement. ",
+      "category": "C"
+    },
+	{
+	  "headline": "When the group work is assessed, what strategies can you implement to make sure that individual accomplishments are not unfairly evaluated based on the outcome of the whole group? ",
+      "text": "Group work as a learning method always embodies certain challenges relating to for instance free rider problems and group dynamics. ",
+      "category": "C"
+    },
+		{
+	  "headline": "How is this unfair or fair? Are there any fairness aspects in favor of your initial approach?",
+      "text": "You have put a lot of effort into a very informative course introduction package, and you believe all the necessary information can be found there. During the course you find that some of your students have misunderstood the assessment tasks and you feel you might have been too strict. You would really like to be nice, and consider lowering the assessment criteria for all students",
+      "category": "B"
+    },
+		{
+	  "headline": "How would you address these?",
+      "text": "You ask a colleague to provide you with a rubric for assessing learning logs. What fairness questions could arise in this context from the students’ perspective? ",
+      "category": "C"
+    },
+		{
+	  "headline": "What are the fairness risks with this setup and how can you address them?",
+      "text": "You make a detailed teaching plan by the book and dedicate a certain number of minutes for Q&A and discussion. You know that the discussion tends to eat the time you need for other tasks. ",
+      "category": "A"
+    },
+	
   ]
 }
