@@ -5,6 +5,33 @@ const cardData = []; // Array to store card data
 let previousCardIndex = -1; // Initialize with an invalid index
 let consecutiveDraws = 0; // Counter for consecutive draws
 const maxConsecutiveDraws = 3; // Number of consecutive draws to achieve
+const imageUrlsToPreload = [
+    'category-a-image.jpg',
+    'category-b-image.jpg',
+    'category-c-image.jpg',
+    'category-d-image.jpg',
+];
+
+function preloadImages(imageUrls) {
+    const preloadedImages = [];
+    imageUrls.forEach((imageUrl) => {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = () => {
+            preloadedImages.push(img);
+            // Check if all images are preloaded, then you can proceed.
+            if (preloadedImages.length === imageUrls.length) {
+                // All images are preloaded, you can enable the "Draw a Card!" button or initiate your card drawing logic here.
+                drawButton.disabled = false; // Enable the button, for example.
+            }
+        };
+    });
+}
+
+// Preload the images when the page loads.
+window.addEventListener('load', () => {
+    preloadImages(imageUrlsToPreload);
+});
 
 // Array to store the indices of the drawn cards in the current set
 let drawnCardIndices = [];
