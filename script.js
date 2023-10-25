@@ -56,7 +56,7 @@ function drawRandomCard() {
 }
 
 function flipCard(card) {
-	const cardText = `<br><bt><br><p>${card.text}</p><h2>${card.headline}</h2>`;
+	const cardText = `<br><br><p>${card.text}</p><h2>${card.headline}</h2>`;
     cardBack.innerHTML = cardText;
     // Remove any existing category classes
     cardBack.classList.remove("category-A", "category-B", "category-C");
